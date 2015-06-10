@@ -7,5 +7,6 @@
     <string name="name">姓名：</string>
     <string name="hints">请输入你的姓名</string>
     <string name="imageDesc">图片控件</string>
-
+	
+    <string name="btnName">按钮</string>
 </resources>
