@@ -6,16 +6,21 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/myBtn"
+        android:id="@+id/myBtn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btnName" />
+        android:text="匿名类实现" />
 
-    <ImageButton
-        android:id="@+id/myImageBtn"
+    <Button
+        android:id="@+id/myBtn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" 
-        android:contentDescription="@string/imageDesc"/>
+        android:text="外部类实现" />
+
+    <Button
+        android:id="@+id/myBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接口方式实现" />
 
 </LinearLayout>
