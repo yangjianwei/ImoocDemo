@@ -1,5 +1,6 @@
 package com.yjw.demo1;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,26 +21,27 @@ public class ButtonListenerActivity extends Activity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_button);
 
-		// findViewById:·µ»ØÒ»¸öView¶ÔÏó
+		// findViewById:è¿”å›ä¸€ä¸ªViewå¯¹è±¡
 		myButton1 = (Button) findViewById(R.id.myBtn1);
 		/*
-		 * ¼àÌıÊÂ¼şÊµÏÖ·½Ê½ :1¡¢ÄäÃûÄÚ²¿Àà£» 2¡¢Íâ²¿ÀàÊµÏÖ£» 3¡¢½Ó¿Ú·½Ê½ÊµÏÖ
+		 * ç›‘å¬äº‹ä»¶å®ç°æ–¹å¼ :1ã€åŒ¿åå†…éƒ¨ç±»ï¼› 2ã€å¤–éƒ¨ç±»å®ç°ï¼› 3ã€æ¥å£æ–¹å¼å®ç°
 		 */
 		myButton1.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Log.i("tag","ÄäÃûÀàÊµÏÖ");
+				Log.i("tag","åŒ¿åç±»å®ç°");
 			}
 		});
 
 		myButton2 = (Button) findViewById(R.id.myBtn2);
 		myButton2.setOnClickListener(new MyOnclickListener(){
+			@SuppressLint("ShowToast") 
 			@Override
 			public void onClick(View v) {
-				// µ÷ÓÃ¸¸ÀàµÄonClick()·½·¨
+				// è°ƒç”¨çˆ¶ç±»çš„onClick()æ–¹æ³•
 				super.onClick(v);
-				Toast.makeText(ButtonListenerActivity.this, "Íâ²¿ÀàÊµÏÖ", 1).show();
+				Toast.makeText(ButtonListenerActivity.this, "å¤–éƒ¨ç±»å®ç°",1).show();
 			}
 		});
 		
@@ -51,7 +53,7 @@ public class ButtonListenerActivity extends Activity implements OnClickListener{
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		Log.i("tag","½Ó¿Ú·½Ê½ÊµÏÖ");
+		Log.i("tag","æ¥å£æ–¹å¼å®ç°");
 	}
 
 }
@@ -61,8 +63,8 @@ class MyOnclickListener implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		Log.i("tag", "Íâ²¿ÀàÊµÏÖ");
-		//¸Ä±äÍ¸Ã÷¶È
+		Log.i("tag", "å¤–éƒ¨ç±»å®ç°");
+		//æ”¹å˜é€æ˜åº¦
 		v.setAlpha(0.5f);
 	}
 }

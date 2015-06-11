@@ -7,7 +7,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.MultiAutoCompleteTextView;
 
 /**
- * AutoCompleteTextView¡¢MultiAutoCompleteTextViewµÄÊ¹ÓÃDemo
+ * AutoCompleteTextViewã€MultiAutoCompleteTextViewçš„ä½¿ç”¨Demo
  * @author Orange
  *
  */
@@ -24,14 +24,14 @@ public class CompleteTextViewActivity extends Activity{
 		setContentView(R.layout.activity_complete);
 		
 		/*
-		 * AutoCompleteTextView£º
-		 * 1¡¢¹¦ÄÜ£º¶¯Ì¬Æ¥ÅäÊäÈëµÄÄÚÈİ£¬Èç°Ù¶ÈËÑË÷ÒıÇæ£ºµ±ÊäÈëÎÄ±¾Ê±¿ÉÒÔ¸ù¾İÄÚÈİÏÔÊ¾Æ¥ÅäµÄÈÈÃÅĞÅÏ¢
-		 * 2¡¢¶ÀÌØÊôĞÔ£ºandroid:completionThreshold = "2"---ÉèÖÃÊäÈë¶àÉÙ×Ö·ûÊ±×Ô¶¯Æ¥Åä
-		 * 3¡¢ÊµÏÖ²½Öè
-		 * µÚÒ»²½£º³õÊ¼»¯¿Ø¼ş
-		 * µÚ¶ş²½£ºĞèÒªÒ»¸öÊÊÅäÆ÷
-		 * µÚÈı²½£º³õÊ¼»¯Êı¾İÔ´--Êı¾İÔ´È¥Æ¥ÅäÎÄ±¾¿òÊäÈëµÄÄÚÈİ
-		 * µÚËÄ²½£º½«adapterÓëµ±Ç°AutoCompleteTextView°ó¶¨
+		 * AutoCompleteTextViewï¼š
+		 * 1ã€åŠŸèƒ½ï¼šåŠ¨æ€åŒ¹é…è¾“å…¥çš„å†…å®¹ï¼Œå¦‚ç™¾åº¦æœç´¢å¼•æ“ï¼šå½“è¾“å…¥æ–‡æœ¬æ—¶å¯ä»¥æ ¹æ®å†…å®¹æ˜¾ç¤ºåŒ¹é…çš„çƒ­é—¨ä¿¡æ¯
+		 * 2ã€ç‹¬ç‰¹å±æ€§ï¼šandroid:completionThreshold = "2"---è®¾ç½®è¾“å…¥å¤šå°‘å­—ç¬¦æ—¶è‡ªåŠ¨åŒ¹é…
+		 * 3ã€å®ç°æ­¥éª¤
+		 * ç¬¬ä¸€æ­¥ï¼šåˆå§‹åŒ–æ§ä»¶
+		 * ç¬¬äºŒæ­¥ï¼šéœ€è¦ä¸€ä¸ªé€‚é…å™¨
+		 * ç¬¬ä¸‰æ­¥ï¼šåˆå§‹åŒ–æ•°æ®æº--æ•°æ®æºå»åŒ¹é…æ–‡æœ¬æ¡†è¾“å…¥çš„å†…å®¹
+		 * ç¬¬å››æ­¥ï¼šå°†adapterä¸å½“å‰AutoCompleteTextViewç»‘å®š
 		 */
 		autoTextView = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView1);
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, 
@@ -39,16 +39,16 @@ public class CompleteTextViewActivity extends Activity{
 		autoTextView.setAdapter(adapter);
 		
 		/*
-		 * MultiAutoCompleteTextView£º
-		 * 1¡¢¹¦ÄÜ£º¿ÉÖ§³Ö¶à¸öÖµ£¨ÔÚ¶à´ÎÊäÈëµÄÇé¿öÏÂ£©£¬·Ö±ğÓÃ·Ö¸ô·û·Ö¿ª£¬²¢ÇÒÔÚÃ¿¸öÖµÑ¡ÖĞµÄÊ±ºòÔÙ³öÊäÈëÖµÊ±»á×Ô¶¯È¥Æ¥Åä£¬¿ÉÓÃÔÚ·¢¶ÌĞÅ·¢ÓÊ¼şÊ±Ñ¡ÔñÁªÏµÈËÕâÖÖÀàĞÍµ±ÖĞ
-		 * 2¡¢¶ÀÌØÊôĞÔ£ºandroid:completionThreshold = "2"---ÉèÖÃÊäÈë¶àÉÙ×Ö·ûÊ±×Ô¶¯Æ¥Åä
-		 * 3¡¢ÉèÖÃ·Ö¸ô·û£ºmtxt.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
-		 * 4¡¢ÊµÏÖ²½Öè£º
-		 * µÚÒ»²½£º³õÊ¼»¯¿Ø¼ş
-		 * µÚ¶ş²½£ºĞèÒªÒ»¸öÊÊÅäÆ÷
-		 * µÚÈı²½£º³õÊ¼»¯Êı¾İÔ´
-		 * µÚËÄ²½£º½«adpterÓë¿Ø¼ş°ó¶¨
-		 * µÚÎå²½£ºÉèÖÃ·Ö¸ô·û
+		 * MultiAutoCompleteTextViewï¼š
+		 * 1ã€åŠŸèƒ½ï¼šå¯æ”¯æŒå¤šä¸ªå€¼ï¼ˆåœ¨å¤šæ¬¡è¾“å…¥çš„æƒ…å†µä¸‹ï¼‰ï¼Œåˆ†åˆ«ç”¨åˆ†éš”ç¬¦åˆ†å¼€ï¼Œå¹¶ä¸”åœ¨æ¯ä¸ªå€¼é€‰ä¸­çš„æ—¶å€™å†å‡ºè¾“å…¥å€¼æ—¶ä¼šè‡ªåŠ¨å»åŒ¹é…ï¼Œå¯ç”¨åœ¨å‘çŸ­ä¿¡å‘é‚®ä»¶æ—¶é€‰æ‹©è”ç³»äººè¿™ç§ç±»å‹å½“ä¸­
+		 * 2ã€ç‹¬ç‰¹å±æ€§ï¼šandroid:completionThreshold = "2"---è®¾ç½®è¾“å…¥å¤šå°‘å­—ç¬¦æ—¶è‡ªåŠ¨åŒ¹é…
+		 * 3ã€è®¾ç½®åˆ†éš”ç¬¦ï¼šmtxt.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+		 * 4ã€å®ç°æ­¥éª¤ï¼š
+		 * ç¬¬ä¸€æ­¥ï¼šåˆå§‹åŒ–æ§ä»¶
+		 * ç¬¬äºŒæ­¥ï¼šéœ€è¦ä¸€ä¸ªé€‚é…å™¨
+		 * ç¬¬ä¸‰æ­¥ï¼šåˆå§‹åŒ–æ•°æ®æº
+		 * ç¬¬å››æ­¥ï¼šå°†adpterä¸æ§ä»¶ç»‘å®š
+		 * ç¬¬äº”æ­¥ï¼šè®¾ç½®åˆ†éš”ç¬¦
 		 */
 		mulAutoTextView = (MultiAutoCompleteTextView) findViewById(R.id.multiAutoCompleteTextView1);
 		mulAutoTextView.setAdapter(adapter);
