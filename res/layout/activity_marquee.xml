@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <com.yjw.demo1.MarQueeTextViewInit
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="梦想还是要有的，万一实现了呢？但今天很残酷，明天更残酷，后天很美好，但大部分人都挂明天晚上，看不到后天的太阳。" />
+
+    <!-- 使用中不建议使用px，因为px不能根据分辨率进行等比缩放；
+    sp，dp，dip都可以根据分辨率进行缩放。 其中sp更多使用在文字上；dip和dp基本一样，推荐dp -->
+    <com.yjw.demo1.MarQueeTextViewInit
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="梦想还是要有的，万一实现了呢？但今天很残酷，明天更残酷，后天很美好，但大部分人都挂明天晚上，看不到后天的太阳。" />
+    
+</LinearLayout>

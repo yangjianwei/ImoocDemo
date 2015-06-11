@@ -13,9 +13,8 @@ import android.widget.MultiAutoCompleteTextView;
  */
 public class CompleteTextViewActivity extends Activity{
 	
-	private AutoCompleteTextView autoTextView;
 	private String[] res = {"puning1","puning2","puning3","jieyang1","jieyang2","chaoshan"};
-	
+	private AutoCompleteTextView autoTextView;
 	private MultiAutoCompleteTextView mulAutoTextView;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

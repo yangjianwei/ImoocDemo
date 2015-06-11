@@ -8,7 +8,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
-
+/**
+ * 监听事件三种实现方式：1、匿名内部类； 2、外部类实现； 3、接口方式实现
+ * @author Orange
+ *
+ */
 public class ButtonListenerActivity extends Activity implements OnClickListener{
 
 	private Button myButton1;
