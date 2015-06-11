@@ -8,7 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class ButtonListener extends Activity implements OnClickListener{
+public class ButtonListenerActivity extends Activity implements OnClickListener{
 
 	private Button myButton1;
 	private Button myButton2;
@@ -39,7 +39,7 @@ public class ButtonListener extends Activity implements OnClickListener{
 			public void onClick(View v) {
 				// 调用父类的onClick()方法
 				super.onClick(v);
-				Toast.makeText(ButtonListener.this, "外部类实现", 1).show();
+				Toast.makeText(ButtonListenerActivity.this, "外部类实现", 1).show();
 			}
 		});
 		
